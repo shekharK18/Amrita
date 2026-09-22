@@ -1,0 +1,1025 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Amrita Bhattacharjee — Fashion Designer (NIFT). End-to-end design, couture, pret, print development and creative direction." />
+  <title>Amrita Bhattacharjee | Fashion Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css?v=v9" />
+</head>
+
+<body>
+
+  <!-- ====== Custom Cursor ====== -->
+  <div id="cursor-dot" aria-hidden="true"></div>
+  <canvas id="sparkle-canvas" aria-hidden="true"></canvas>
+  <canvas id="thread-canvas" aria-hidden="true"></canvas>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- ====== Navigation ====== -->
+  <nav id="nav" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="nav-logo">A<span>.</span>B</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#resume">CV</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================================================
+       SECTION 1 · HERO
+       ================================================ -->
+  <section id="hero" aria-label="Hero">
+
+    <!-- Floating fashion elements -->
+    <div class="hero-bg-elements" aria-hidden="true">
+      <span class="float-el">✂️</span>
+      <span class="float-el">🪡</span>
+      <span class="float-el">✦</span>
+      <span class="float-el">🌸</span>
+      <span class="float-el">✧</span>
+      <span class="float-el">🧵</span>
+      <span class="float-el">💎</span>
+      <span class="float-el">✶</span>
+    </div>
+
+
+    <!-- SVG Fashion Doodles -->
+    <div class="hero-doodles" aria-hidden="true">
+      <!-- Scissors top-left -->
+      <svg class="doodle doodle-scissors" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="22" cy="20" r="8" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="22" cy="54" r="8" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="28" y1="25" x2="72" y2="55" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="28" y1="49" x2="72" y2="25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="22" cy="20" r="3" fill="currentColor"/>
+        <circle cx="22" cy="54" r="3" fill="currentColor"/>
+      </svg>
+
+      <!-- Needle & Thread bottom-right -->
+      <svg class="doodle doodle-needle" viewBox="0 0 60 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M30 10 Q32 35 30 110" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="30" cy="10" rx="5" ry="8" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="30" cy="10" rx="2" ry="3.5" stroke="currentColor" stroke-width="1"/>
+        <path d="M30 110 Q40 95 30 90 Q20 95 30 110Z" fill="currentColor" opacity="0.6"/>
+      </svg>
+
+      <!-- Spool of thread top-right -->
+      <svg class="doodle doodle-spool" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="30" cy="12" rx="18" ry="7" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="30" cy="48" rx="18" ry="7" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="12" y1="12" x2="12" y2="48" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="48" y1="12" x2="48" y2="48" stroke="currentColor" stroke-width="1.5"/>
+        <ellipse cx="30" cy="30" rx="10" ry="18" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+        <path d="M20 30 Q30 15 40 30 Q30 45 20 30Z" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+      </svg>
+
+      <!-- Stitch marks bottom-left -->
+      <svg class="doodle doodle-stitch" viewBox="0 0 80 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line x1="0"  y1="10" x2="10" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+        <line x1="16" y1="10" x2="26" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+        <line x1="32" y1="10" x2="42" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+        <line x1="48" y1="10" x2="58" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+        <line x1="64" y1="10" x2="74" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 6"/>
+      </svg>
+
+      <!-- Safety pin -->
+      <svg class="doodle doodle-pin" viewBox="0 0 40 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 5 Q32 5 32 18 L32 55 Q32 70 20 70 Q8 70 8 55 L8 18 Q8 5 20 5Z" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="20" y1="5" x2="20" y2="55" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M14 55 Q20 65 26 55" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <circle cx="20" cy="18" r="4" stroke="currentColor" stroke-width="1.5"/>
+      </svg>
+    </div>    <!-- Side accent lines -->
+    <div class="hero-line-left"  aria-hidden="true"></div>
+    <div class="hero-line-right" aria-hidden="true"></div>
+
+    <!-- Main content -->
+    <div class="hero-content">
+      <p class="hero-eyebrow">Fashion Designer (NIFT) · Hyderabad, India</p>
+
+      <h1 class="hero-name" id="hero-name">
+        <span class="name-line">Amrita</span>
+        <span class="name-line name-accent">Bhattacharjee</span>
+      </h1>
+
+      <p class="hero-tagline">Design · Draping · Print Development · Creative Direction</p>
+
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary magnetic">View Work</a>
+        <a href="#contact" class="btn btn-outline magnetic">Let's Collaborate</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  
+  <!-- ====== Fashion Ticker Strip ====== -->
+  <div class="fashion-ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Fashion Design</span><span class="ticker-dot">✦</span>
+      <span>Couture</span><span class="ticker-dot">✦</span>
+      <span>Pattern Making</span><span class="ticker-dot">✦</span>
+      <span>Creative Direction</span><span class="ticker-dot">✦</span>
+      <span>Print Development</span><span class="ticker-dot">✦</span>
+      <span>NIFT Graduate</span><span class="ticker-dot">✦</span>
+      <span>Draping</span><span class="ticker-dot">✦</span>
+      <span>Embroidery</span><span class="ticker-dot">✦</span>
+      <span>Hyderabad</span><span class="ticker-dot">✦</span>
+      <span>Anushree Reddy</span><span class="ticker-dot">✦</span>
+      <span>Anamika Khanna</span><span class="ticker-dot">✦</span>
+      <span>Ready-to-wear</span><span class="ticker-dot">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Fashion Design</span><span class="ticker-dot">✦</span>
+      <span>Couture</span><span class="ticker-dot">✦</span>
+      <span>Pattern Making</span><span class="ticker-dot">✦</span>
+      <span>Creative Direction</span><span class="ticker-dot">✦</span>
+      <span>Print Development</span><span class="ticker-dot">✦</span>
+      <span>NIFT Graduate</span><span class="ticker-dot">✦</span>
+      <span>Draping</span><span class="ticker-dot">✦</span>
+      <span>Embroidery</span><span class="ticker-dot">✦</span>
+      <span>Hyderabad</span><span class="ticker-dot">✦</span>
+      <span>Anushree Reddy</span><span class="ticker-dot">✦</span>
+      <span>Anamika Khanna</span><span class="ticker-dot">✦</span>
+      <span>Ready-to-wear</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 2 · ABOUT
+       ================================================ -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">✦</span>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- Photo -->
+        <div class="about-image-wrap reveal">
+          <div class="about-photo">
+            <img src="assets/images/Profile picture.png" alt="Amrita Bhattacharjee — Fashion Designer" />
+            <div class="about-photo-frame" aria-hidden="true"></div>
+          </div>
+          <div class="about-badge">
+            <strong>4+</strong>
+            Years of<br>Craft
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text">
+          <div class="section-label reveal">
+            <span class="section-label-line"></span>
+            <span class="section-label-text">About Me</span>
+          </div>
+
+          <h2 class="section-title reveal split-title" id="about-heading">
+            Where <em>fabric</em><br>meets vision
+          </h2>
+
+          <p class="reveal reveal-delay-1">
+            I am Amrita Bhattacharjee — an innovative Fashion Designer and NIFT graduate with a passion for end-to-end design excellence. Skilled in advanced draping, print development, and the complete design lifecycle from concept to final production for both pret and couture lines.
+          </p>
+          <p class="reveal reveal-delay-2">
+            From seasonal collection conceptualization to managing vendor relationships, fit trials, and quality assurance — I believe every garment tells a story. I specialize in print development, embroidery layouts, silhouette creation, and creative direction across editorial and commercial fashion.
+          </p>
+          <p class="reveal reveal-delay-3">
+            Having worked with some of India's most celebrated fashion houses — Anushree Reddy, Anamika Khanna, Acute Rebellion, and Myst Designs — I bring both creative vision and production rigour to every project.
+          </p>
+
+          <div class="about-stats reveal reveal-delay-4">
+            <div class="stat-item">
+              <span class="stat-number">6+</span>
+              <span class="stat-label">Fashion Houses</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">NIFT</span>
+              <span class="stat-label">Kolkata Graduate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 3 · PORTFOLIO
+       ================================================ -->
+  <section id="portfolio" aria-labelledby="portfolio-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">✂️</span>
+      </div>
+
+      <div class="section-label reveal">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Selected Work</span>
+      </div>
+      <h2 class="section-title reveal split-title" id="portfolio-heading">
+        The <em>Collections</em>
+      </h2>
+
+      <!-- Filters -->
+      <div class="portfolio-filters reveal reveal-delay-1" role="group" aria-label="Filter portfolio">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="couture">Couture</button>
+        <button class="filter-btn" data-filter="ready-to-wear">Ready-to-wear</button>
+        <button class="filter-btn" data-filter="lookbook">Creative Direction</button>
+        <button class="filter-btn" data-filter="textile">Textile &amp; Design</button>
+      </div>
+
+      <!-- Grid -->
+      <div class="portfolio-grid">
+
+        <!-- Card 1 — Design Collection -->
+        <article class="portfolio-card reveal" data-category="couture"
+                 data-pdf="https://drive.google.com/file/d/10yV5TsPbGxmDmzrCZhHlDWzsa1-IKRb0/preview"
+                 data-title="Design Collection Portfolio">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=10yV5TsPbGxmDmzrCZhHlDWzsa1-IKRb0&sz=w800"
+                 alt="Design Collection Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/10yV5TsPbGxmDmzrCZhHlDWzsa1-IKRb0/preview"
+                      data-title="Design Collection Portfolio">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Couture</p>
+            <h3 class="card-title">Design Collection Portfolio</h3>
+          </div>
+        </article>
+
+        <!-- Card 2 — Acute Rebellion -->
+        <article class="portfolio-card reveal reveal-delay-1" data-category="ready-to-wear"
+                 data-pdf="https://drive.google.com/file/d/1Bb87s53Pa-iaFx2uGx7sRRhbAVJNiIax/preview"
+                 data-title="Acute Rebellion">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1Bb87s53Pa-iaFx2uGx7sRRhbAVJNiIax&sz=w800"
+                 alt="Acute Rebellion Work Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1Bb87s53Pa-iaFx2uGx7sRRhbAVJNiIax/preview"
+                      data-title="Acute Rebellion — Head Designer">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Ready-to-wear · Head Designer</p>
+            <h3 class="card-title">Acute Rebellion</h3>
+          </div>
+        </article>
+
+        <!-- Card 3 — Fashion Illustrations -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="textile"
+                 data-pdf="https://drive.google.com/file/d/1dT-W4KkgSHSCWVNgE2G-t8MwyIoAWeFV/preview"
+                 data-title="Fashion Illustrations">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1dT-W4KkgSHSCWVNgE2G-t8MwyIoAWeFV&sz=w800"
+                 alt="Fashion Illustrations" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1dT-W4KkgSHSCWVNgE2G-t8MwyIoAWeFV/preview"
+                      data-title="Fashion Illustrations">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Illustration</p>
+            <h3 class="card-title">Fashion Illustrations</h3>
+          </div>
+        </article>
+
+        <!-- Card 4 — Anamika Khanna -->
+        <article class="portfolio-card reveal reveal-delay-3" data-category="couture"
+                 data-pdf="https://drive.google.com/file/d/1qBz8lmaft57pAUMfzBOzNUNOEAccK6LQ/preview"
+                 data-title="Anamika Khanna Work Portfolio">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1qBz8lmaft57pAUMfzBOzNUNOEAccK6LQ&sz=w800"
+                 alt="Anamika Khanna Work Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1qBz8lmaft57pAUMfzBOzNUNOEAccK6LQ/preview"
+                      data-title="Anamika Khanna — Junior Fashion Designer">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Couture · Junior Designer</p>
+            <h3 class="card-title">Anamika Khanna Collection</h3>
+          </div>
+        </article>
+
+        <!-- Card 5 — Athleisure -->
+        <article class="portfolio-card reveal" data-category="ready-to-wear"
+                 data-pdf="https://drive.google.com/file/d/1AKjJJFoVR2Orq3MYliNYB9c0FCayNbty/preview"
+                 data-title="Athleisure Portfolio">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1AKjJJFoVR2Orq3MYliNYB9c0FCayNbty&sz=w800"
+                 alt="Athleisure Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1AKjJJFoVR2Orq3MYliNYB9c0FCayNbty/preview"
+                      data-title="Athleisure Portfolio">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Ready-to-wear</p>
+            <h3 class="card-title">Athleisure Portfolio</h3>
+          </div>
+        </article>
+
+        <!-- Card 6 — Creative Direction & Styling -->
+        <article class="portfolio-card reveal reveal-delay-1" data-category="lookbook"
+                 data-pdf="https://drive.google.com/file/d/1nnqDkc4Qmd1m56OP07v2c0r_X4IMo8Nw/preview"
+                 data-title="Creative Direction &amp; Styling">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1nnqDkc4Qmd1m56OP07v2c0r_X4IMo8Nw&sz=w800"
+                 alt="Creative Direction and Styling" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1nnqDkc4Qmd1m56OP07v2c0r_X4IMo8Nw/preview"
+                      data-title="Creative Direction &amp; Styling">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Creative Direction</p>
+            <h3 class="card-title">Creative Direction &amp; Styling</h3>
+          </div>
+        </article>
+
+        <!-- Card 7 — Myst -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="lookbook"
+                 data-pdf="https://drive.google.com/file/d/1sTVUZU8FvDcjTPkLGsmyqVdpHBzrZec8/preview"
+                 data-title="Myst Work Portfolio">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1sTVUZU8FvDcjTPkLGsmyqVdpHBzrZec8&sz=w800"
+                 alt="Myst Designs Work Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1sTVUZU8FvDcjTPkLGsmyqVdpHBzrZec8/preview"
+                      data-title="Myst Designs — Senior Fashion Designer">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Pret &amp; Couture · Senior Designer</p>
+            <h3 class="card-title">Myst Designs Portfolio</h3>
+          </div>
+        </article>
+
+        <!-- Card 8 — Exhibition Design -->
+        <article class="portfolio-card reveal reveal-delay-3" data-category="textile"
+                 data-pdf="https://drive.google.com/file/d/1eFVXxR5byoMzaL8tKMXg10K1uTPuTBK1/preview"
+                 data-title="Exhibition Design">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1eFVXxR5byoMzaL8tKMXg10K1uTPuTBK1&sz=w800"
+                 alt="Exhibition Design" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1eFVXxR5byoMzaL8tKMXg10K1uTPuTBK1/preview"
+                      data-title="Exhibition Design">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Exhibition</p>
+            <h3 class="card-title">Exhibition Design</h3>
+          </div>
+        </article>
+
+        <!-- Card 9 — Retail & Experience Design -->
+        <article class="portfolio-card reveal" data-category="textile"
+                 data-pdf="https://drive.google.com/file/d/1qrtP5XaStFWY-i5PEm2gmjNr2eQJ1z2c/preview"
+                 data-title="Retail &amp; Experience Design">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1qrtP5XaStFWY-i5PEm2gmjNr2eQJ1z2c&sz=w800"
+                 alt="Retail and Experience Design" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1qrtP5XaStFWY-i5PEm2gmjNr2eQJ1z2c/preview"
+                      data-title="Retail &amp; Experience Design">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Visual Merchandising</p>
+            <h3 class="card-title">Retail &amp; Experience Design</h3>
+          </div>
+        </article>
+
+        <!-- Card 10 — Cancelled Plans -->
+        <article class="portfolio-card reveal reveal-delay-1" data-category="ready-to-wear"
+                 data-pdf="https://drive.google.com/file/d/1z9tzatjCEGlmsfUfNpb9IvWVDmKxxpzq/preview"
+                 data-title="Cancelled Plans">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1z9tzatjCEGlmsfUfNpb9IvWVDmKxxpzq&sz=w800"
+                 alt="Cancelled Plans Work Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/1z9tzatjCEGlmsfUfNpb9IvWVDmKxxpzq/preview"
+                      data-title="Cancelled Plans — Fashion Designer">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Ready-to-wear · Fashion Designer</p>
+            <h3 class="card-title">Cancelled Plans</h3>
+          </div>
+        </article>
+
+        <!-- Card 11 — Internship Portfolio -->
+        <article class="portfolio-card reveal reveal-delay-2" data-category="couture"
+                 data-pdf="https://drive.google.com/file/d/17JqHNyAxcx-Eanomr-zno9Dyn8qjwtPr/preview"
+                 data-title="Internship Portfolio">
+          <div class="card-thumb">
+            <img src="https://drive.google.com/thumbnail?id=17JqHNyAxcx-Eanomr-zno9Dyn8qjwtPr&sz=w800"
+                 alt="Internship Portfolio" loading="lazy" />
+            <div class="card-overlay">
+              <button class="card-view-btn"
+                      data-pdf="https://drive.google.com/file/d/17JqHNyAxcx-Eanomr-zno9Dyn8qjwtPr/preview"
+                      data-title="Internship Portfolio">View PDF ↗</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p class="card-category">Design Studio</p>
+            <h3 class="card-title">Internship Portfolio</h3>
+          </div>
+        </article>
+
+      </div>
+      <!-- /.portfolio-grid -->
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 4 · SKILLS
+       ================================================ -->
+  <section id="skills" aria-labelledby="skills-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">✦</span>
+      </div>
+
+      <div class="section-label reveal">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Expertise</span>
+      </div>
+      <h2 class="section-title reveal split-title" id="skills-heading">
+        Craft &amp; <em>Skills</em>
+      </h2>
+
+      <div class="skills-grid">
+        <!-- Left column -->
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-header">
+              <span class="skill-name">Conceptualization &amp; Ideation</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="95" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-1">
+            <div class="skill-header">
+              <span class="skill-name">Pattern Making &amp; Draping</span>
+              <span class="skill-pct">93%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="93" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-2">
+            <div class="skill-header">
+              <span class="skill-name">Print Development &amp; Illustrations</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="90" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-3">
+            <div class="skill-header">
+              <span class="skill-name">Sampling &amp; Production Management</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="88" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right column -->
+        <div>
+          <div class="skill-item reveal">
+            <div class="skill-header">
+              <span class="skill-name">Creative Direction &amp; Styling</span>
+              <span class="skill-pct">87%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="87" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-1">
+            <div class="skill-header">
+              <span class="skill-name">Visual Merchandising</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="85" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-2">
+            <div class="skill-header">
+              <span class="skill-name">Adobe Illustrator / Photoshop</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="88" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-item reveal reveal-delay-3">
+            <div class="skill-header">
+              <span class="skill-name">Photoshoot Coordination</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-pct="82" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tags cloud -->
+      <div class="tags-section reveal">
+        <p class="tags-label">Specialisations</p>
+        <div class="tags-cloud">
+          <span class="tag">Draping</span>
+          <span class="tag">Couture</span>
+          <span class="tag">Print Development</span>
+          <span class="tag">Pattern Making</span>
+          <span class="tag">Embroidery Layouts</span>
+          <span class="tag">Creative Direction</span>
+          <span class="tag">Fashion Illustration</span>
+          <span class="tag">Visual Merchandising</span>
+          <span class="tag">Photoshoot Coordination</span>
+          <span class="tag">Fabric Selection</span>
+          <span class="tag">Mood Board Creation</span>
+          <span class="tag">Adobe Illustrator</span>
+          <span class="tag">CorelDRAW</span>
+          <span class="tag">AutoCAD (Fashion)</span>
+          <span class="tag">Canva</span>
+          <span class="tag">Social Media Management</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 5 · RESUME / CV
+       ================================================ -->
+  <section id="resume" aria-labelledby="resume-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">📄</span>
+      </div>
+
+      <div class="section-label reveal">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Curriculum Vitae</span>
+      </div>
+      <h2 class="section-title reveal split-title" id="resume-heading">
+        Experience &amp; <em>Journey</em>
+      </h2>
+
+      <!-- CV Download Banner -->
+      <div class="cv-download-banner reveal">
+        <div class="cv-banner-left">
+          <span class="cv-banner-icon">✦</span>
+          <div>
+            <p class="cv-banner-title">Amrita Bhattacharjee</p>
+            <p class="cv-banner-sub">Fashion Designer (NIFT) · Hyderabad, India</p>
+          </div>
+        </div>
+        <a href="https://drive.google.com/file/d/1nJxtwQDbIf3MjPjqHO5Bz66obMwoJhha/view?usp=sharing" target="_blank" rel="noopener"
+           class="btn btn-primary cv-download-btn magnetic">
+          ↓ Download Full CV
+        </a>
+      </div>
+
+      <!-- Tab switcher -->
+      <div class="cv-tabs reveal reveal-delay-1">
+        <button class="cv-tab active" data-tab="experience">Experience</button>
+        <button class="cv-tab" data-tab="education">Education</button>
+      </div>
+
+      <!-- Experience Panel -->
+      <div class="cv-panel" id="cv-experience">
+
+        <div class="cv-entry reveal">
+          <div class="cv-entry-aside">
+            <span class="cv-dot current"></span>
+            <span class="cv-period">Aug 2026 – Present</span>
+            <span class="cv-tag">Current</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Anushree Reddy · Hyderabad</p>
+            <h3 class="cv-role">Fashion Designer</h3>
+            <ul class="cv-bullets">
+              <li>Designing seasonal collections from concept to final production</li>
+              <li>Creating silhouettes, embroidery layouts, prints &amp; technical design specifications</li>
+              <li>Managing end-to-end product development — sourcing, sampling, fit trials &amp; production</li>
+              <li>Collaborating with artisans, vendors &amp; production teams for quality &amp; timely delivery</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-1">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Jul 2025 – Jul 2026</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Cancelled Plans &amp; Malle</p>
+            <h3 class="cv-role">Fashion Designer</h3>
+            <ul class="cv-bullets">
+              <li>Designed &amp; developed garments and lifestyle accessories</li>
+              <li>Managed end-to-end production — planning, sampling, fit trials, QC &amp; final approvals</li>
+              <li>Conducted trend research, concept development &amp; graphic design aligned with brand identity</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-2">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">May 2024 – Jun 2025</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Acute Rebellion</p>
+            <h3 class="cv-role">Head Designer</h3>
+            <ul class="cv-bullets">
+              <li>Led design direction &amp; seasonal conceptualization for the brand's edgy youth-driven collections</li>
+              <li>Developed original prints, surface textures &amp; silhouettes with cultural commentary</li>
+              <li>Oversaw end-to-end sampling &amp; production, liaising with vendors, karigars &amp; tailoring units</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-3">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Aug 2024 – Jun 2025</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Myst Designs</p>
+            <h3 class="cv-role">Senior Fashion Designer</h3>
+            <ul class="cv-bullets">
+              <li>Conceptualized modern silhouettes, print artworks &amp; embroidery khakas for pret &amp; couture</li>
+              <li>Oversaw sampling &amp; production coordination, ensuring quality control &amp; timely execution</li>
+              <li>Collaborated with artisans to maintain premium quality &amp; cost-effective commercial viability</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Mar 2023 – Mar 2024</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Anamika Khanna Fashionwears &amp; Exports Pvt. Ltd.</p>
+            <h3 class="cv-role">Junior Fashion Designer</h3>
+            <ul class="cv-bullets">
+              <li>Spearheaded precision pattern making, advanced draping &amp; surface design</li>
+              <li>Crafted exclusive samples for inventory, bespoke client orders &amp; high-profile fashion shows</li>
+              <li>Directed production design &amp; rigorous quality assurance across manufacturing operations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-1">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Jun 2022 – Sep 2022</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Shivali Boutique Pvt. Ltd.</p>
+            <h3 class="cv-role">Fashion Stylist &amp; Social Media Manager</h3>
+            <ul class="cv-bullets">
+              <li>Planned &amp; styled high-impact photoshoots, exhibitions &amp; marketing campaigns</li>
+              <li>Designed sophisticated social media graphics &amp; compelling product catalogs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-2">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Jun 2021 – Aug 2021</span>
+            <span class="cv-tag intern">Internship</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Label Rajlaxmi</p>
+            <h3 class="cv-role">Fashion Design Intern</h3>
+            <ul class="cv-bullets">
+              <li>Forecasted trends &amp; developed mood boards for a physical collection of seven ensembles</li>
+              <li>Coordinated with multiple tailors &amp; pattern masters for seamless garment production</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-3">
+          <div class="cv-entry-aside">
+            <span class="cv-dot"></span>
+            <span class="cv-period">Apr 2021 – May 2021</span>
+            <span class="cv-tag intern">Internship</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">10 Hills Studio</p>
+            <h3 class="cv-role">Fashion Design Intern</h3>
+            <ul class="cv-bullets">
+              <li>Designed silhouettes &amp; innovative print graphics for streetwear trends</li>
+              <li>Sourced materials &amp; optimized production efficiency with master tailors</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /#cv-experience -->
+
+      <!-- Education Panel (hidden by default) -->
+      <div class="cv-panel hidden" id="cv-education">
+
+        <div class="cv-entry reveal">
+          <div class="cv-entry-aside">
+            <span class="cv-dot edu"></span>
+            <span class="cv-period">2018 – 2022</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">National Institute of Fashion Technology (NIFT) · Kolkata</p>
+            <h3 class="cv-role">Bachelor of Design — Fashion Design</h3>
+            <ul class="cv-bullets">
+              <li>Specialization in fashion design, pattern making, draping &amp; print development</li>
+              <li>Collection conceptualization, portfolio creation &amp; industry exposure</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cv-entry reveal reveal-delay-1">
+          <div class="cv-entry-aside">
+            <span class="cv-dot edu"></span>
+            <span class="cv-period">2018 – 2022</span>
+          </div>
+          <div class="cv-entry-body">
+            <p class="cv-company">Pratt Memorial School · Kolkata</p>
+            <h3 class="cv-role">Diploma in Fine Arts (Theory &amp; Practical)</h3>
+            <ul class="cv-bullets">
+              <li>Foundation in fine arts theory, drawing, composition &amp; practical studio skills</li>
+            </ul>
+          </div>
+        </div>
+
+      </div><!-- /#cv-education -->
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 6 · BRANDS (replaces fake testimonials)
+       ================================================ -->
+  <section id="brands" aria-labelledby="brands-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">💼</span>
+      </div>
+
+      <div class="section-label reveal">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Experience</span>
+      </div>
+      <h2 class="section-title reveal split-title" id="brands-heading">
+        Brands I've <em>Worked With</em>
+      </h2>
+
+      <div class="brands-grid reveal reveal-delay-1">
+
+        <div class="brand-card">
+          <div class="brand-icon">👗</div>
+          <h3 class="brand-name">Anushree Reddy</h3>
+          <p class="brand-role">Fashion Designer</p>
+          <p class="brand-period">Aug 2026 – Present</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-icon">🌿</div>
+          <h3 class="brand-name">Cancelled Plans &amp; Malle</h3>
+          <p class="brand-role">Fashion Designer</p>
+          <p class="brand-period">Jul 2025 – Jul 2026</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-icon">⚡</div>
+          <h3 class="brand-name">Acute Rebellion</h3>
+          <p class="brand-role">Head Designer</p>
+          <p class="brand-period">May 2024 – Jun 2025</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-icon">🌙</div>
+          <h3 class="brand-name">Myst Designs</h3>
+          <p class="brand-role">Senior Fashion Designer</p>
+          <p class="brand-period">Aug 2024 – Jun 2025</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-icon">🌸</div>
+          <h3 class="brand-name">Anamika Khanna</h3>
+          <p class="brand-role">Junior Fashion Designer</p>
+          <p class="brand-period">Mar 2023 – Mar 2024</p>
+        </div>
+
+        <div class="brand-card">
+          <div class="brand-icon">✦</div>
+          <h3 class="brand-name">Shivali Boutique</h3>
+          <p class="brand-role">Fashion Stylist &amp; Social Media Manager</p>
+          <p class="brand-period">Jun 2022 – Sep 2022</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SECTION 7 · CONTACT
+       ================================================ -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="container">
+
+      <div class="ribbon-divider" aria-hidden="true">
+        <span class="ribbon-icon">✉️</span>
+      </div>
+
+      <div class="section-label reveal">
+        <span class="section-label-line"></span>
+        <span class="section-label-text">Get in Touch</span>
+      </div>
+      <h2 class="section-title reveal split-title" id="contact-heading">
+        Let's <em>Create</em> Together
+      </h2>
+
+      <div class="contact-grid">
+
+        <!-- Info -->
+        <div class="reveal">
+          <div class="contact-info-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <p class="contact-info-label">Location</p>
+              <p class="contact-info-value">Hyderabad, Telangana, India</p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-icon">✉️</span>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">
+                <a href="mailto:7991amy@gmail.com" style="color:inherit;text-decoration:none;">7991amy@gmail.com</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-icon">📱</span>
+            <div>
+              <p class="contact-info-label">Phone</p>
+              <p class="contact-info-value">
+                <a href="tel:+919073961558" style="color:inherit;text-decoration:none;">+91 90739 61558</a>
+              </p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-icon">💼</span>
+            <div>
+              <p class="contact-info-label">LinkedIn</p>
+              <p class="contact-info-value">
+                <a href="https://www.linkedin.com/in/amrita-bhattacharjee-181938212/"
+                   target="_blank" rel="noopener" style="color:inherit;text-decoration:none;">
+                  amrita-bhattacharjee
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal reveal-delay-1">
+          <form id="contact-form" novalidate>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name"
+                     placeholder="e.g. Priya Sharma" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required autocomplete="email"
+                     placeholder="priya@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject"
+                     placeholder="e.g. Design Collaboration Inquiry" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required
+                        placeholder="Tell me about your project or vision…"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary magnetic">Send Message ✦</button>
+            </div>
+
+            <p class="submit-success" id="submit-success">
+              ✦ Thank you! I'll be in touch soon.
+            </p>
+            <p class="submit-error" id="submit-error" style="display:none;color:#e74c3c;margin-top:.75rem;font-size:.85rem;"></p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p class="footer-logo">A<span>.</span>B</p>
+
+      <div class="footer-socials">
+        <a href="mailto:7991amy@gmail.com" class="social-link" aria-label="Email">✉️</a>
+        <a href="https://www.linkedin.com/in/amrita-bhattacharjee-181938212/"
+           target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">💼</a>
+        <a href="https://drive.google.com/file/d/1nJxtwQDbIf3MjPjqHO5Bz66obMwoJhha/view?usp=sharing" target="_blank" rel="noopener" class="social-link" aria-label="Download CV">📄</a>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 Amrita Bhattacharjee · Fashion Designer (NIFT) · Hyderabad, India
+      </p>
+    </div>
+  </footer>
+
+  <!-- ================================================
+       LIGHTBOX
+       ================================================ -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title">
+    <div class="lightbox-header">`n      <span class="lightbox-title" id="lb-title">Portfolio</span>`n      <a id="lb-external" href="#" target="_blank" rel="noopener" class="lightbox-ext-link">Open in Google Drive ↗</a>`n      <button class="lightbox-close" id="lb-close" aria-label="Close">✕</button>
+    </div>
+    <div class="lightbox-body">
+      <iframe id="lb-frame" title="Portfolio PDF viewer"></iframe>
+    </div>
+  </div>
+
+  <!-- ================================================
+       EMAILJS CONFIG  ← fill in your 3 IDs here
+       Get them free at https://www.emailjs.com/
+       ================================================ -->
+  <script>
+    window.__EJ_PK__  = 'YOUR_PUBLIC_KEY';    // ← replace
+    window.__EJ_SVC__ = 'YOUR_SERVICE_ID';    // ← replace
+    window.__EJ_TPL__ = 'YOUR_TEMPLATE_ID';   // ← replace
+  </script>
+
+  <!-- ================================================
+       SCRIPTS
+       ================================================ -->
+  <script src="assets/js/cursor.js" defer></script>
+  <script src="assets/js/animations.js?v=v9" defer></script>
+  <script src="assets/js/fairy.js" defer></script>
+
+</body>
+</html>
+
